@@ -152,14 +152,14 @@ export const testimonials: Testimonial[] = [
 
 /* ── Galerie ──────────────────────────────────── */
 export const galleryItems: GalleryItem[] = [
-  { id: "g1", src: "/images/gallery-1.jpg", alt: "Mise en place raffinée", category: "mariages", caption: "Écrin de cristal, Mariage d'été", aspect: "landscape" },
-  { id: "g2", src: "/images/gallery-2.jpg", alt: "Plat signature", category: "signature", caption: "Tatin de mangue, mousse de bissap", aspect: "portrait" },
-  { id: "g3", src: "/images/gallery-3.jpg", alt: "Événement corporate", category: "corporate", caption: "Soirée de lancement, Paris 8e", aspect: "landscape" },
-  { id: "g4", src: "/images/gallery-4.jpg", alt: "Décor floral élégant", category: "prive", caption: "Élégance botanique", aspect: "square" },
-  { id: "g5", src: "/images/gallery-5.jpg", alt: "Dessert gastronomique", category: "signature", caption: "Sphère chocolat & piment d'Espelette", aspect: "portrait" },
-  { id: "g6", src: "/images/gallery-6.jpg", alt: "Table dressée", category: "mariages", caption: "Réception sous les étoiles", aspect: "landscape" },
-  { id: "g7", src: "/images/gallery-7.jpg", alt: "Cocktail coloré", category: "prive", caption: "Cocktail hibiscus & gingembre", aspect: "square" },
-  { id: "g8", src: "/images/gallery-8.jpg", alt: "Chef en action", category: "corporate", caption: "L'art du live cooking", aspect: "portrait" },
+  { id: "g1", src: "/images/gallery-1.jpg", alt: "Table dressée sous cloche en cristal", category: "mariages", caption: "Réception sous cloche, dîner de gala", aspect: "square" },
+  { id: "g2", src: "/images/gallery-2.jpg", alt: "Tarte chocolat-mangue en cours de dressage", category: "signature", caption: "Tarte mangue & feuille d'or", aspect: "square" },
+  { id: "g3", src: "/images/gallery-3.jpg", alt: "Cocktails ananas-gingembre au bar", category: "corporate", caption: "Cocktails ananas, thym & gingembre", aspect: "square" },
+  { id: "g4", src: "/images/gallery-4.jpg", alt: "Tartelettes coco, banane et passion", category: "prive", caption: "Tartelettes coco-passion", aspect: "square" },
+  { id: "g5", src: "/images/gallery-5.jpg", alt: "Tartelettes à la crème et fleur caramélisée", category: "signature", caption: "Tartelettes crème & agrumes", aspect: "portrait" },
+  { id: "g6", src: "/images/gallery-6.jpg", alt: "Dîner aux bougies entre convives", category: "mariages", caption: "Dîner intimiste aux chandelles", aspect: "portrait" },
+  { id: "g7", src: "/images/gallery-7.jpg", alt: "Bissap glacé à la menthe et au gingembre", category: "prive", caption: "Bissap glacé, menthe fraîche", aspect: "square" },
+  { id: "g8", src: "/images/gallery-8.jpg", alt: "Chef préparant une sauce en cuisine", category: "corporate", caption: "En cuisine, le geste précis", aspect: "square" },
 ];
 
 /* ── Équipe ────────────────────────────────────── */

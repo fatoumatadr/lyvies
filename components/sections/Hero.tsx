@@ -122,7 +122,7 @@ export default function Hero() {
         transition={{ delay: 2, duration: 1 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-[5]"
       >
-        <span className="text-[9px] uppercase tracking-[0.3em] font-jost font-medium text-sable/30">
+        <span className="text-[9px] uppercase tracking-[0.3em] font-jost font-medium text-gum/50">
           Défiler
         </span>
       </motion.div>

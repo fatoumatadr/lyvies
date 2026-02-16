@@ -155,7 +155,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[10px] font-jost font-medium tracking-wider text-sable/40 hover:text-sable transition-all duration-500"
+                  className="text-[10px] font-jost font-medium tracking-wider text-gum/60 hover:text-sable transition-all duration-500"
                   aria-label={social.label}
                 >
                   {social.icon}
@@ -166,7 +166,8 @@ export default function Footer() {
         </motion.div>
 
         {/* ── Bottom bar ── */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8">
+        <div className="w-full h-px bg-gum/15 mb-8" />
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[11px] font-garamond italic text-sable/20">
             © {new Date().getFullYear()} Lyvies Traiteur. Tous droits réservés.
           </p>

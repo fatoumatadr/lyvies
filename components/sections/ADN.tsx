@@ -87,7 +87,7 @@ export default function ADN() {
                 <span className="font-jost font-medium text-3xl lg:text-4xl text-noir-900">
                   {stat.nombre}
                 </span>
-                <span className="block text-[10px] uppercase tracking-[0.15em] font-jost font-medium text-noir-900/40 mt-1">
+                <span className="block text-[10px] uppercase tracking-[0.15em] font-jost font-medium text-gum mt-1">
                   {stat.label}
                 </span>
               </motion.div>

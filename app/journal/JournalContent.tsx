@@ -56,11 +56,11 @@ export default function JournalContent() {
 
                 {/* Meta */}
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-[10px] tracking-[0.15em] font-jost text-noir-900/30">
+                  <span className="text-[10px] tracking-[0.15em] font-jost text-gum">
                     {new Date(post.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
                   </span>
-                  <span className="w-1 h-1 rounded-full bg-oak/30" />
-                  <span className="text-[10px] tracking-[0.15em] font-jost text-noir-900/30">
+                  <span className="w-1 h-1 rounded-full bg-gum/40" />
+                  <span className="text-[10px] tracking-[0.15em] font-jost text-gum">
                     {post.readTime} min
                   </span>
                 </div>

@@ -79,7 +79,7 @@ export default function Testimonials() {
               <p className="text-caption uppercase tracking-[0.2em] font-jost font-medium text-noir-900/40 mt-1">
                 {t.role}
               </p>
-              <p className="text-[10px] tracking-[0.15em] font-jost text-noir-900/25 mt-2">
+              <p className="text-[10px] tracking-[0.15em] font-jost text-gum/60 mt-2">
                 {t.event}
               </p>
             </motion.div>
