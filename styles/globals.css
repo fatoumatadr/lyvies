@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ══════════════════════════════════════════════
+   LYVIES TRAITEUR — Design System Global
+   Palette: Pepper / Gum / Oak / Smoke
+   Font: Jost (200–500)
+   ══════════════════════════════════════════════ */
+
+@layer base {
+  :root {
+    --color-background: #DCDAD0;
+    --color-background-alt: #DCDAD0;
+    --color-surface: #DCDAD0;
+    --color-text-primary: #38261C;
+    --color-text-secondary: #38261C;
+    --color-text-muted: #8F8C78;
+    --color-accent: #B0987C;
+    --color-accent-muted: #8F8C78;
+
+    --section-padding: clamp(5rem, 12vw, 10rem);
+    --container-max: 1400px;
+    --container-padding: clamp(1.5rem, 4vw, 4rem);
+
+    --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --duration-fast: 300ms;
+    --duration-normal: 600ms;
+    --duration-slow: 1000ms;
+  }
+
+  html {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--color-background); }
+  ::-webkit-scrollbar-thumb { background: #B0987C; border-radius: 3px; }
+
+  ::selection {
+    background-color: rgba(56, 38, 28, 0.12);
+    color: var(--color-text-primary);
+  }
+}
+
+@layer components {
+  .container-lyvies {
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+  }
+
+  .grain-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 256px;
+  }
+
+  .btn-premium {
+    @apply relative overflow-hidden px-10 py-4 text-caption uppercase tracking-[0.25em]
+           font-jost font-light transition-all duration-500;
+    border: 1px solid var(--color-text-primary);
+    color: var(--color-text-primary);
+  }
+  .btn-premium::before {
+    content: "";
+    @apply absolute inset-0 -translate-x-full transition-transform duration-500;
+    background: var(--color-text-primary);
+    z-index: -1;
+  }
+  .btn-premium:hover::before { @apply translate-x-0; }
+  .btn-premium:hover { color: #DCDAD0; }
+
+  .btn-filled {
+    @apply px-10 py-4 text-caption uppercase tracking-[0.25em]
+           font-jost font-light transition-all duration-500;
+    background: var(--color-text-primary);
+    color: #DCDAD0;
+  }
+  .btn-filled:hover { background: #B0987C; }
+
+  .parallax-img {
+    @apply w-full h-full object-cover;
+    will-change: transform;
+  }
+}
+
+@layer utilities {
+  .mask-fade-bottom {
+    mask-image: linear-gradient(to bottom, black 60%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent);
+  }
+
+  .mask-fade-edges {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+}
