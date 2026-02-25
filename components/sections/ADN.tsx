@@ -37,7 +37,7 @@ export default function ADN() {
               className="w-full h-[120%] bg-cover bg-center"
               style={{
                 backgroundImage: "url('/images/adn-heritage.jpg')",
-                backgroundColor: "#38261C",
+                backgroundColor: "#3B2218",
               }}
             />
           </motion.div>
@@ -56,7 +56,7 @@ export default function ADN() {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             custom={0.3}
-            className="font-jost text-body-lg font-light text-noir-900/70 leading-[1.8] mb-10"
+            className="font-jost text-body-lg font-light text-charbon/70 leading-[1.8] mb-10"
           >
             {adnContent.texte}
           </motion.p>
@@ -68,10 +68,10 @@ export default function ADN() {
             custom={0.5}
             className="relative mb-12"
           >
-            <p className="font-jost font-normal text-xl lg:text-2xl italic text-noir-900/80 leading-relaxed">
+            <p className="font-jost font-normal text-xl lg:text-2xl italic text-charbon/80 leading-relaxed">
               {adnContent.citation}
             </p>
-            <cite className="block mt-3 text-caption uppercase tracking-[0.2em] font-jost font-medium text-oak not-italic">
+            <cite className="block mt-3 text-caption uppercase tracking-[0.2em] font-jost font-medium text-or not-italic">
               {adnContent.auteurCitation}
             </cite>
           </motion.blockquote>
@@ -84,10 +84,10 @@ export default function ADN() {
           >
             {adnContent.stats.map((stat) => (
               <motion.div key={stat.label} variants={staggerItem} className="text-center lg:text-left">
-                <span className="font-jost font-medium text-3xl lg:text-4xl text-noir-900">
+                <span className="font-jost font-medium text-3xl lg:text-4xl text-cacao">
                   {stat.nombre}
                 </span>
-                <span className="block text-[10px] uppercase tracking-[0.15em] font-jost font-medium text-gum mt-1">
+                <span className="block text-[10px] uppercase tracking-[0.15em] font-jost font-medium text-taupe mt-1">
                   {stat.label}
                 </span>
               </motion.div>

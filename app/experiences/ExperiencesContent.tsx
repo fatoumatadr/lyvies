@@ -58,7 +58,7 @@ function ExperienceBlock({
       >
         <div
           className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: `url('${image}')`, backgroundColor: "#38261C" }}
+          style={{ backgroundImage: `url('${image}')`, backgroundColor: "#3B2218" }}
         />
       </motion.div>
 
@@ -68,7 +68,7 @@ function ExperienceBlock({
           variants={fadeUp}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="text-caption uppercase tracking-[0.3em] font-jost text-oak mb-3 block"
+          className="text-caption uppercase tracking-[0.3em] font-jost text-or mb-3 block"
         >
           {subtitle}
         </motion.span>
@@ -78,7 +78,7 @@ function ExperienceBlock({
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           custom={0.1}
-          className="font-jost font-medium text-display-md uppercase tracking-normal text-noir-900 mb-6"
+          className="font-jost font-medium text-display-md uppercase tracking-normal text-cacao mb-6"
         >
           {title}
         </motion.h3>
@@ -89,7 +89,7 @@ function ExperienceBlock({
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           custom={0.2}
-          className="font-jost text-body-lg font-light text-noir-900/70 leading-[1.8] mb-8"
+          className="font-jost text-body-lg font-light text-charbon/70 leading-[1.8] mb-8"
         >
           {description}
         </motion.p>
@@ -105,8 +105,8 @@ function ExperienceBlock({
               custom={0.3 + i * 0.08}
               className="flex items-center gap-4"
             >
-              <span className="font-jost text-body-sm font-light text-noir-900/30 flex-shrink-0">–</span>
-              <span className="font-jost text-body-sm font-light text-noir-900/50">{feature}</span>
+              <span className="font-jost text-body-sm font-light text-charbon/30 flex-shrink-0">–</span>
+              <span className="font-jost text-body-sm font-light text-charbon/50">{feature}</span>
             </motion.div>
           ))}
         </div>
@@ -170,11 +170,11 @@ export default function ExperiencesContent() {
     <>
       {/* Hero */}
       <section className="relative h-[55vh] min-h-[420px] flex items-end overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/experiences-hero.jpg')", backgroundColor: "#38261C" }} />
-        <div className="absolute inset-0 bg-gradient-to-t from-noir-900 via-noir-900/50 to-noir-900/30" />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/experiences-hero.jpg')", backgroundColor: "#3B2218" }} />
+        <div className="absolute inset-0 bg-gradient-to-t from-noir via-noir/50 to-noir/30" />
         <div className="relative z-10 container-lyvies pb-16">
           <motion.div variants={fadeUp} initial="hidden" animate="visible">
-            <Heading surtitre="Nos prestations" titre="Expériences culinaires" align="left" />
+            <Heading surtitre="Nos prestations" titre="Expériences culinaires" align="left" light />
           </motion.div>
         </div>
       </section>
@@ -206,10 +206,10 @@ export default function ExperiencesContent() {
         >
           {services.map((service) => (
             <motion.div key={service.titre} variants={staggerItem}>
-              <h3 className="font-jost font-medium text-xl uppercase tracking-normal text-noir-900 mb-4">
+              <h3 className="font-jost font-medium text-xl uppercase tracking-normal text-cacao mb-4">
                 {service.titre}
               </h3>
-              <p className="font-jost text-body-md font-light text-noir-900/60 leading-[1.8]">
+              <p className="font-jost text-body-md font-light text-charbon/60 leading-[1.8]">
                 {service.description}
               </p>
             </motion.div>

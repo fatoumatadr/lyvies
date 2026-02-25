@@ -44,7 +44,7 @@ export default function Heading({
           animate={inView ? "visible" : "hidden"}
           custom={0}
           className={`text-caption uppercase tracking-[0.3em] font-jost font-medium mb-6 ${
-            light ? "text-sable/60" : "text-oak"
+            light ? "text-sable/60" : "text-or"
           }`}
         >
           {surtitre}
@@ -58,7 +58,7 @@ export default function Heading({
         animate={inView ? "visible" : "hidden"}
         custom={0.15}
         className={`font-jost font-medium uppercase tracking-[-0.01em] leading-[0.95] ${
-          light ? "text-sable" : "text-noir-900"
+          light ? "text-sable" : "text-cacao"
         }`}
         style={{ fontSize: "clamp(1.8rem, 3.5vw, 3.2rem)" }}
       >
@@ -73,7 +73,7 @@ export default function Heading({
           animate={inView ? "visible" : "hidden"}
           custom={0.3}
           className={`mt-6 max-w-2xl font-jost font-light text-body-md leading-relaxed ${
-            light ? "text-sable/70" : "text-noir-900/60"
+            light ? "text-sable/70" : "text-charbon/60"
           }`}
         >
           {sousTitre}

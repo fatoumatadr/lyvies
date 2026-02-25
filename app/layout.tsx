@@ -4,7 +4,7 @@
 // ══════════════════════════════════════════════
 
 import type { Metadata } from "next";
-import { Jost, EB_Garamond } from "next/font/google";
+import { Jost, Cormorant_Garamond } from "next/font/google";
 import { siteMetadata } from "@/lib/data";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -17,9 +17,9 @@ const jost = Jost({
   display: "swap",
 });
 
-const garamond = EB_Garamond({
+const garamond = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
   variable: "--font-garamond",
   display: "swap",
@@ -68,9 +68,9 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <meta name="theme-color" content="#DCDAD0" />
+        <meta name="theme-color" content="#F5EDE0" />
       </head>
-      <body className="bg-sable text-noir-900 font-jost antialiased overflow-x-hidden">
+      <body className="bg-sable text-charbon font-jost antialiased overflow-x-hidden">
         <div className="grain-overlay" aria-hidden="true" />
         <Navbar />
         <main className="relative z-[1]">{children}</main>

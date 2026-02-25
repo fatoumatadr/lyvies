@@ -37,7 +37,7 @@ export default function Footer() {
   const [ref, inView] = useInViewAnimation(0.1);
 
   return (
-    <footer ref={ref} className="relative bg-noir-900">
+    <footer ref={ref} className="relative bg-noir">
       <div className="container-lyvies py-24 lg:py-32">
         {/* ── Section supérieure : Logo + Newsletter ── */}
         <motion.div
@@ -71,7 +71,7 @@ export default function Footer() {
                 placeholder="Votre adresse email"
                 className="bg-transparent border border-sable/15 border-r-0 px-6 py-3 text-body-sm font-jost font-light text-sable placeholder:text-sable/30 outline-none focus:border-sable/40 transition-colors duration-500 w-full lg:w-72"
               />
-              <button className="px-6 py-3 bg-sable text-noir-900 text-[10px] uppercase tracking-[0.2em] font-jost font-medium hover:bg-sable/80 transition-colors duration-500 whitespace-nowrap">
+              <button className="px-6 py-3 bg-sable text-cacao text-[10px] uppercase tracking-[0.2em] font-jost font-medium hover:bg-sable/80 transition-colors duration-500 whitespace-nowrap">
                 S'inscrire
               </button>
             </div>
@@ -155,7 +155,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[10px] font-jost font-medium tracking-wider text-gum/60 hover:text-sable transition-all duration-500"
+                  className="text-[10px] font-jost font-medium tracking-wider text-taupe/60 hover:text-sable transition-all duration-500"
                   aria-label={social.label}
                 >
                   {social.icon}
@@ -166,7 +166,7 @@ export default function Footer() {
         </motion.div>
 
         {/* ── Bottom bar ── */}
-        <div className="w-full h-px bg-gum/15 mb-8" />
+        <div className="w-full h-px bg-taupe/15 mb-8" />
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[11px] font-garamond italic text-sable/20">
             © {new Date().getFullYear()} Lyvies Traiteur. Tous droits réservés.

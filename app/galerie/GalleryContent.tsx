@@ -24,11 +24,11 @@ export default function GalleryPageContent() {
     <>
       {/* Hero */}
       <section className="relative h-[50vh] min-h-[380px] flex items-end overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/galerie-hero.jpg')", backgroundColor: "#38261C" }} />
-        <div className="absolute inset-0 bg-gradient-to-t from-noir-900 via-noir-900/50 to-noir-900/20" />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/galerie-hero.jpg')", backgroundColor: "#3B2218" }} />
+        <div className="absolute inset-0 bg-gradient-to-t from-noir via-noir/50 to-noir/20" />
         <div className="relative z-10 container-lyvies pb-16">
           <motion.div variants={fadeUp} initial="hidden" animate="visible">
-            <Heading surtitre="Portfolio" titre="Galerie" align="left" />
+            <Heading surtitre="Portfolio" titre="Galerie" align="left" light />
           </motion.div>
         </div>
       </section>
@@ -42,8 +42,8 @@ export default function GalleryPageContent() {
               onClick={() => setFilter(cat.key)}
               className={`px-6 py-2.5 text-[10px] uppercase tracking-[0.25em] font-jost font-medium transition-all duration-500 ${
                 filter === cat.key
-                  ? "bg-noir-900 text-sable"
-                  : "bg-transparent text-noir-900/40 hover:text-noir-900"
+                  ? "bg-noir text-sable"
+                  : "bg-transparent text-charbon/40 hover:text-charbon"
               }`}
             >
               {cat.label}

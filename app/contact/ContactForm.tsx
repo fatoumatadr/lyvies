@@ -56,15 +56,16 @@ export default function ContactForm() {
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/contact-hero.jpg')", backgroundColor: "#38261C" }}
+          style={{ backgroundImage: "url('/images/contact-hero.jpg')", backgroundColor: "#3B2218" }}
         />
-        <div className="absolute inset-0 bg-noir-900/75" />
+        <div className="absolute inset-0 bg-noir/75" />
         <div className="relative z-10 text-center container-lyvies">
           <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0}>
             <Heading
               surtitre="Contact"
               titre="Imaginons ensemble"
               sousTitre="Partagez-nous les contours de votre événement. Nous composerons une proposition sur mesure."
+              light
             />
           </motion.div>
         </div>
@@ -83,7 +84,7 @@ export default function ContactForm() {
             >
               {/* Coordonnées */}
               <motion.div variants={staggerItem}>
-                <h3 className="font-jost font-medium text-display-sm uppercase tracking-normal text-oak mb-8">
+                <h3 className="font-jost font-medium text-display-sm uppercase tracking-normal text-or mb-8">
                   Vos coordonnées
                 </h3>
                 <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
@@ -97,7 +98,7 @@ export default function ContactForm() {
               
               {/* Événement */}
               <motion.div variants={staggerItem}>
-                <h3 className="font-jost font-medium text-display-sm uppercase tracking-normal text-oak mb-8">
+                <h3 className="font-jost font-medium text-display-sm uppercase tracking-normal text-or mb-8">
                   Votre événement
                 </h3>
                 <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
@@ -111,7 +112,7 @@ export default function ContactForm() {
               
               {/* Ambiance & Budget */}
               <motion.div variants={staggerItem}>
-                <h3 className="font-jost font-medium text-display-sm uppercase tracking-normal text-oak mb-8">
+                <h3 className="font-jost font-medium text-display-sm uppercase tracking-normal text-or mb-8">
                   Ambiance & Budget
                 </h3>
                 <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
@@ -123,7 +124,7 @@ export default function ContactForm() {
               
               {/* Message */}
               <motion.div variants={staggerItem}>
-                <h3 className="font-jost font-medium text-display-sm uppercase tracking-normal text-oak mb-8">
+                <h3 className="font-jost font-medium text-display-sm uppercase tracking-normal text-or mb-8">
                   Votre vision
                 </h3>
                 <FormInput
@@ -140,7 +141,7 @@ export default function ContactForm() {
                 <Button variant="filled" size="lg" type="submit">
                   Envoyer ma demande
                 </Button>
-                <p className="text-[10px] tracking-[0.1em] font-jost text-noir-900/30 text-center">
+                <p className="text-[10px] tracking-[0.1em] font-jost text-charbon/30 text-center">
                   Nous vous répondons sous 48 heures ouvrées avec une proposition personnalisée.
                 </p>
               </motion.div>
@@ -153,13 +154,13 @@ export default function ContactForm() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="text-center py-20"
             >
-              <div className="w-16 h-16 border border-noir-900/15 rounded-full flex items-center justify-center mx-auto mb-8">
-                <span className="text-2xl text-noir-900">✓</span>
+              <div className="w-16 h-16 border border-cacao/15 rounded-full flex items-center justify-center mx-auto mb-8">
+                <span className="text-2xl text-cacao">✓</span>
               </div>
-              <h3 className="font-jost font-medium text-display-md uppercase text-noir-900 mb-4">
+              <h3 className="font-jost font-medium text-display-md uppercase text-cacao mb-4">
                 Merci
               </h3>
-              <p className="font-jost text-body-lg font-light text-noir-900/70 max-w-md mx-auto">
+              <p className="font-jost text-body-lg font-light text-charbon/70 max-w-md mx-auto">
                 Votre demande a bien été envoyée. Notre équipe vous contactera dans les plus brefs délais pour composer votre expérience sur mesure.
               </p>
             </motion.div>

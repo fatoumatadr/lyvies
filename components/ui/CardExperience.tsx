@@ -33,7 +33,7 @@ export default function CardExperience({ experience, index }: CardExperienceProp
         {/* Image avec zoom au hover */}
         <motion.div variants={imageZoom} className="absolute inset-0">
           <div
-            className="w-full h-full bg-noir-900"
+            className="w-full h-full bg-noir"
             style={{
               backgroundImage: `url(${experience.image})`,
               backgroundSize: "cover",
@@ -43,7 +43,7 @@ export default function CardExperience({ experience, index }: CardExperienceProp
         </motion.div>
 
         {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-noir-900 via-noir-900/40 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-700" />
+        <div className="absolute inset-0 bg-gradient-to-t from-noir via-noir/40 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-700" />
 
         {/* Contenu bas */}
         <div className="absolute inset-x-0 bottom-0 p-8">

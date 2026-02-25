@@ -45,7 +45,7 @@ function StorySection({
         <motion.div className="absolute inset-0" style={{ y: imageY }}>
           <div
             className="w-full h-[130%] bg-cover bg-center"
-            style={{ backgroundImage: `url('${image}')`, backgroundColor: "#38261C" }}
+            style={{ backgroundImage: `url('${image}')`, backgroundColor: "#3B2218" }}
           />
         </motion.div>
       </motion.div>
@@ -58,11 +58,11 @@ function StorySection({
           animate={inView ? "visible" : "hidden"}
           custom={0.1}
         >
-          <span className="text-caption uppercase tracking-[0.3em] font-jost text-oak mb-4 block">
+          <span className="text-caption uppercase tracking-[0.3em] font-jost text-or mb-4 block">
             {surtitre}
           </span>
           <h2
-            className="font-jost font-medium uppercase text-noir-900 tracking-normal mb-8"
+            className="font-jost font-medium uppercase text-cacao tracking-normal mb-8"
             style={{ fontSize: "clamp(1.8rem, 3.5vw, 3rem)", lineHeight: 1 }}
           >
             {titre}
@@ -76,7 +76,7 @@ function StorySection({
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             custom={0.2 + i * 0.15}
-            className="font-jost text-body-md font-light text-noir-900/70 leading-[1.8] mb-6"
+            className="font-jost text-body-md font-light text-charbon/70 leading-[1.8] mb-6"
           >
             {p}
           </motion.p>
@@ -93,12 +93,12 @@ export default function UniversContent() {
       <section className="relative h-[60vh] min-h-[450px] flex items-end overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/univers-hero.jpg')", backgroundColor: "#38261C" }}
+          style={{ backgroundImage: "url('/images/univers-hero.jpg')", backgroundColor: "#3B2218" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-noir-900 via-noir-900/50 to-noir-900/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-noir via-noir/50 to-noir/30" />
         <div className="relative z-10 container-lyvies pb-16">
           <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0.2}>
-            <Heading surtitre="Notre univers" titre="L'âme de Lyvies" align="left" />
+            <Heading surtitre="Notre univers" titre="L'âme de Lyvies" align="left" light />
           </motion.div>
         </div>
       </section>
@@ -166,19 +166,19 @@ export default function UniversContent() {
               >
                 <motion.div variants={imageZoom} className="absolute inset-0">
                   <div
-                    className="w-full h-full bg-cover bg-center bg-noir-900"
+                    className="w-full h-full bg-cover bg-center bg-noir"
                     style={{ backgroundImage: `url('${member.image}')` }}
                   />
                 </motion.div>
-                <div className="absolute inset-0 bg-gradient-to-t from-noir-900/60 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-noir/60 via-transparent to-transparent" />
               </motion.div>
-              <h3 className="font-jost font-medium text-2xl uppercase tracking-normal text-noir-900 mb-1">
+              <h3 className="font-jost font-medium text-2xl uppercase tracking-normal text-cacao mb-1">
                 {member.name}
               </h3>
-              <span className="text-caption uppercase tracking-[0.25em] font-jost text-oak block mb-4">
+              <span className="text-caption uppercase tracking-[0.25em] font-jost text-or block mb-4">
                 {member.role}
               </span>
-              <p className="font-jost text-body-sm font-light text-noir-900/50 leading-relaxed">
+              <p className="font-jost text-body-sm font-light text-charbon/50 leading-relaxed">
                 {member.bio}
               </p>
             </motion.article>

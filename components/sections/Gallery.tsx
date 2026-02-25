@@ -50,8 +50,8 @@ export default function Gallery() {
               transition-all duration-500
               ${
                 activeFilter === cat.key
-                  ? "bg-noir-900 text-sable"
-                  : "bg-transparent text-noir-900/50 hover:text-noir-900"
+                  ? "bg-noir text-sable"
+                  : "bg-transparent text-charbon/50 hover:text-charbon"
               }
             `}
           >

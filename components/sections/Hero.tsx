@@ -38,7 +38,7 @@ export default function Hero() {
           className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('/images/hero-bg.jpg')",
-            backgroundColor: "#38261C",
+            backgroundColor: "#3B2218",
           }}
         />
       </motion.div>
@@ -47,7 +47,7 @@ export default function Hero() {
         className="absolute inset-0 z-[1]"
         style={{ opacity: overlayOpacity }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-noir-900/80 via-noir-900/40 to-noir-900/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-noir/80 via-noir/40 to-noir/90" />
       </motion.div>
 
       <div className="relative z-[5] container-lyvies text-center flex flex-col items-center">
@@ -56,7 +56,7 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
           custom={0.3}
-          className="text-caption uppercase tracking-[0.4em] font-jost font-medium text-oak mb-8"
+          className="text-caption uppercase tracking-[0.4em] font-jost font-medium text-or mb-8"
         >
           {heroContent.surtitre}
         </motion.span>
@@ -122,7 +122,7 @@ export default function Hero() {
         transition={{ delay: 2, duration: 1 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-[5]"
       >
-        <span className="text-[9px] uppercase tracking-[0.3em] font-jost font-medium text-gum/50">
+        <span className="text-[9px] uppercase tracking-[0.3em] font-jost font-medium text-taupe/50">
           Défiler
         </span>
       </motion.div>

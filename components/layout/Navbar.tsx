@@ -23,7 +23,7 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
 
-  const burgerColor = menuOpen ? "#DCDAD0" : scrolled ? "#B0987C" : "#DCDAD0";
+  const burgerColor = menuOpen ? "#F5EDE0" : scrolled ? "#C9A96E" : "#F5EDE0";
 
   return (
     <>
@@ -58,7 +58,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`text-[10px] tracking-[0.3em] uppercase font-jost font-medium transition-colors duration-500 ${
                   scrolled
-                    ? "text-noir-900/50 hover:text-noir-900"
+                    ? "text-cacao hover:text-or"
                     : "text-sable/60 hover:text-sable"
                 }`}
               >
@@ -73,7 +73,7 @@ export default function Navbar() {
               href="/contact"
               className={`text-[10px] tracking-[0.25em] uppercase font-jost font-medium px-8 py-3 border transition-all duration-500 ${
                 scrolled
-                  ? "border-oak text-noir-900 hover:bg-oak"
+                  ? "border-or text-cacao hover:bg-or"
                   : "border-sable/40 text-sable hover:bg-sable/10"
               }`}
             >
@@ -114,7 +114,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="fixed inset-0 z-[105] bg-noir-900/98 backdrop-blur-2xl flex items-center justify-center"
+            className="fixed inset-0 z-[105] bg-noir/98 backdrop-blur-2xl flex items-center justify-center"
           >
             <motion.div
               variants={staggerContainer}
@@ -127,7 +127,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className="font-jost font-medium text-3xl md:text-4xl uppercase tracking-[0.05em] text-sable hover:text-oak transition-colors duration-500"
+                    className="font-jost font-medium text-3xl md:text-4xl uppercase tracking-[0.05em] text-sable hover:text-or transition-colors duration-500"
                   >
                     {link.label}
                   </Link>
@@ -138,7 +138,7 @@ export default function Navbar() {
                 <Link
                   href="/contact"
                   onClick={() => setMenuOpen(false)}
-                  className="px-12 py-4 border border-oak text-oak text-[11px] uppercase tracking-[0.3em] font-jost font-medium hover:bg-oak hover:text-noir-900 transition-all duration-500"
+                  className="px-12 py-4 border border-or text-or text-[11px] uppercase tracking-[0.3em] font-jost font-medium hover:bg-or hover:text-noir transition-all duration-500"
                 >
                   Demander un devis
                 </Link>
@@ -173,7 +173,7 @@ export default function Navbar() {
           >
             <Link
               href="/contact"
-              className="block w-full text-center py-3.5 bg-oak text-noir-900 text-[11px] uppercase tracking-[0.25em] font-jost font-medium"
+              className="block w-full text-center py-3.5 bg-or text-noir text-[11px] uppercase tracking-[0.25em] font-jost font-medium"
             >
               Demander un devis
             </Link>

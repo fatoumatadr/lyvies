@@ -30,12 +30,12 @@ export default function CTAFinal() {
           className="w-full h-[130%] bg-cover bg-center"
           style={{
             backgroundImage: "url('/images/cta-bg.jpg')",
-            backgroundColor: "#38261C",
+            backgroundColor: "#3B2218",
           }}
         />
       </motion.div>
 
-      <div className="absolute inset-0 z-[1] bg-noir-900/80" />
+      <div className="absolute inset-0 z-[1] bg-noir/80" />
 
       <div ref={ref} className="relative z-[5] container-lyvies text-center py-16 lg:py-24">
         <motion.span
@@ -43,7 +43,7 @@ export default function CTAFinal() {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           custom={0}
-          className="text-caption uppercase tracking-[0.3em] font-jost font-medium text-oak mb-6 block"
+          className="text-caption uppercase tracking-[0.3em] font-jost font-medium text-or mb-6 block"
         >
           Prochaine étape
         </motion.span>

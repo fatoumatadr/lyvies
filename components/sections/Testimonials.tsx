@@ -71,15 +71,15 @@ export default function Testimonials() {
               exit="exit"
               className="absolute inset-0 flex flex-col items-center justify-center text-center px-8"
             >
-              <blockquote className="font-jost font-light text-xl md:text-2xl lg:text-3xl italic text-noir-900 leading-relaxed mb-10 max-w-3xl">
+              <blockquote className="font-jost font-light text-xl md:text-2xl lg:text-3xl italic text-cacao leading-relaxed mb-10 max-w-3xl">
                 « {t.quote} »
               </blockquote>
 
-              <p className="font-jost font-medium text-lg text-noir-900">{t.name}</p>
-              <p className="text-caption uppercase tracking-[0.2em] font-jost font-medium text-noir-900/40 mt-1">
+              <p className="font-jost font-medium text-lg text-cacao">{t.name}</p>
+              <p className="text-caption uppercase tracking-[0.2em] font-jost font-medium text-charbon/40 mt-1">
                 {t.role}
               </p>
-              <p className="text-[10px] tracking-[0.15em] font-jost text-gum/60 mt-2">
+              <p className="text-[10px] tracking-[0.15em] font-jost text-taupe/60 mt-2">
                 {t.event}
               </p>
             </motion.div>
@@ -89,7 +89,7 @@ export default function Testimonials() {
         <div className="flex items-center justify-center gap-8 mt-12">
           <button
             onClick={() => paginate(-1)}
-            className="w-12 h-12 flex items-center justify-center text-noir-900/30 hover:text-noir-900 transition-all duration-500"
+            className="w-12 h-12 flex items-center justify-center text-charbon/30 hover:text-charbon transition-all duration-500"
             aria-label="Précédent"
           >
             <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
@@ -104,8 +104,8 @@ export default function Testimonials() {
                 onClick={() => setCurrent([i, i > current ? 1 : -1])}
                 className={`rounded-full transition-all duration-700 ${
                   i === current
-                    ? "w-2 h-2 bg-noir-900"
-                    : "w-1.5 h-1.5 bg-noir-900/20 hover:bg-noir-900/40"
+                    ? "w-2 h-2 bg-noir"
+                    : "w-1.5 h-1.5 bg-noir/20 hover:bg-noir/40"
                 }`}
                 aria-label={`Témoignage ${i + 1}`}
               />
@@ -114,7 +114,7 @@ export default function Testimonials() {
 
           <button
             onClick={() => paginate(1)}
-            className="w-12 h-12 flex items-center justify-center text-noir-900/30 hover:text-noir-900 transition-all duration-500"
+            className="w-12 h-12 flex items-center justify-center text-charbon/30 hover:text-charbon transition-all duration-500"
             aria-label="Suivant"
           >
             <svg width="16" height="12" viewBox="0 0 16 12" fill="none">

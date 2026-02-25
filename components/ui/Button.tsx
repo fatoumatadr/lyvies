@@ -27,15 +27,15 @@ const sizeClasses: Record<ButtonSize, string> = {
 
 const variantClasses: Record<ButtonVariant, string> = {
   outline:
-    "border border-oak bg-transparent text-noir-900 hover:bg-oak hover:text-noir-900 transition-all duration-500",
+    "border border-or bg-transparent text-cacao hover:bg-or hover:text-noir transition-all duration-500",
   filled:
-    "bg-oak text-noir-900 hover:bg-oak/80 transition-all duration-500",
+    "bg-or text-noir hover:bg-or/80 transition-all duration-500",
   ghost:
-    "bg-transparent text-noir-900/60 hover:text-noir-900 transition-all duration-500",
+    "bg-transparent text-charbon/60 hover:text-charbon transition-all duration-500",
   link:
-    "bg-transparent text-noir-900 hover:text-noir-900/60 underline underline-offset-4 decoration-noir-900/20 hover:decoration-noir-900 transition-all duration-500 !px-0 !py-0",
+    "bg-transparent text-cacao hover:text-cacao/60 underline underline-offset-4 decoration-cacao/20 hover:decoration-cacao transition-all duration-500 !px-0 !py-0",
   "outline-light":
-    "border border-sable/50 bg-transparent text-sable hover:bg-sable hover:text-noir-900 transition-all duration-500",
+    "border border-sable/50 bg-transparent text-sable hover:bg-sable hover:text-noir transition-all duration-500",
 };
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(

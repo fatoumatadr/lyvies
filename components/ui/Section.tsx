@@ -21,7 +21,7 @@ const bgClasses: Record<string, string> = {
   dark: "bg-sable",
   warm: "bg-sable",
   surface: "bg-sable",
-  light: "bg-noir-900",
+  light: "bg-noir",
 };
 
 export default function Section({

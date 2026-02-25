@@ -39,7 +39,7 @@ export default function GalleryItem({ item, index }: GalleryItemProps) {
         {/* Image */}
         <motion.div variants={imageZoom} className="absolute inset-0">
           <div
-            className="w-full h-full bg-noir-900"
+            className="w-full h-full bg-noir"
             style={{
               backgroundImage: `url(${item.src})`,
               backgroundSize: "cover",
@@ -49,7 +49,7 @@ export default function GalleryItem({ item, index }: GalleryItemProps) {
         </motion.div>
 
         {/* Overlay hover */}
-        <div className="absolute inset-0 bg-noir-900/0 group-hover:bg-noir-900/60 transition-all duration-700" />
+        <div className="absolute inset-0 bg-noir/0 group-hover:bg-noir/60 transition-all duration-700" />
 
         {/* Contenu hover */}
         <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-6">
@@ -62,7 +62,7 @@ export default function GalleryItem({ item, index }: GalleryItemProps) {
         </div>
 
         {/* Badge catégorie (toujours visible) */}
-        <div className="absolute top-4 left-4 px-3 py-1 bg-noir-900/60 backdrop-blur-sm">
+        <div className="absolute top-4 left-4 px-3 py-1 bg-noir/60 backdrop-blur-sm">
           <span className="text-[9px] uppercase tracking-[0.2em] font-jost font-medium text-sable/70">
             {item.category}
           </span>

@@ -9,12 +9,17 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
-      /* ── Palette Lyvies — 4 couleurs strictes ── */
+      /* ── Palette Lyvies — Charte graphique officielle ── */
       colors: {
-        noir: { DEFAULT: "#38261C", 900: "#38261C" },
-        oak: "#B0987C",
-        sable: "#DCDAD0",
-        gum: "#8F8C78",
+        noir:       { DEFAULT: "#0A0A08", 900: "#0A0A08" },
+        cacao:      { DEFAULT: "#3B2218", 900: "#3B2218" },
+        burgundy:   "#6B2D3E",
+        terracotta: "#C08060",
+        olive:      "#5C5A3E",
+        sable:      { DEFAULT: "#F5EDE0", 100: "#F0ECE4" },
+        taupe:      "#B8A99A",
+        or:         "#C9A96E",
+        charbon:    "#2E2A27",
       },
 
       /* ── Typographie (Jost uniquement) ── */
